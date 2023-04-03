@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	background-image: url(/img/s_l_back.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	text-align: center;
+	color: #fff;
+}
+.mail{
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+.mail a{
+	color: #fff;
+	padding: 1rem;
+}
+.mail :hover{
+	transform: scale(1.1);
+	background-color: green;
+	color: white;	
+	border-radius: 1rem;
+}
+.phone{
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+.phone a{
+	color: #fff;
+	padding: 1rem;
+}
+.phone :hover{
+	transform: scale(1.1);
+	background-color: green;
+	color: white;	
+	border-radius: 1rem;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: pop-in 2s ease-out forwards;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    70% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+h5 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+h4 {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}
+
+.button {
+	background-color: #fff;
+	color: #000;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 2rem;
+	font-size: 1.5rem;
+	margin: 1rem;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: green;
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h5 {
+		font-size: 1rem;
+	}
+
+	.button {
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+		margin: 0.5rem;
+		border-radius: 1rem;
+	}
+    .button:hover {
+		background-color: green;
+		color: #000;
+	}
+    
+}

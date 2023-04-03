@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: pop-in 2s ease-out forwards;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    70% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/img/s_l_back1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.already{
+    color: #ccc;
+}
+form {
+  width: 90%;
+  max-width: 400px;
+  background-color: #0b0b0bb9;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ccc;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1.2rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #000;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: green;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+  color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    padding: 1rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+}
