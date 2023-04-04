@@ -94,7 +94,14 @@ This is achieved using `PHP` which is programming language used to script websit
 
 Database connection is established using `server_id`,`password`,`database_name`.
 
+`$con = mysqli_connect("localhost", "root", "", "petcare");`
+
 `POST` method is used to push data from form to tables.
+
+`$_SERVER["REQUEST_METHOD"] == "POST"`
+
+For registration `$query = "INSERT INTO users (attribute1,attribute2,attribute3) VALUES('$attribute1','attribute2','$attribute3')";
+		$result = mysqli_query($con, $query);` query is used to fill the tables.
 
 `action` of form will refer to the file where php is written.
 
